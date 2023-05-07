@@ -5,11 +5,11 @@
      - name: users creation
        user: name="{{item}}" state=present
        with_items:
-           - file1
-           - file2
-           - file3
-           - file4
-           - file5
+           - user1
+           - user2
+           - user3
+           - user4
+           - user5
 
 
 
