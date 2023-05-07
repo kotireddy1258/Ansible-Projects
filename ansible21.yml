@@ -1,5 +1,5 @@
 ---
- - name: mutiple service restart
+ - name: multiple service restart
    hosts: localhost
    tasks:
      - name: service start
