@@ -1,0 +1,15 @@
+---
+ - name: mutiple service restart
+   hosts: localhost
+   tasks:
+     - name: service start
+       service: name="{{item}}" state=reladed
+       with_items:
+           - httpd
+           - vsftp
+           - ntps
+           - sshd
+
+
+
+
