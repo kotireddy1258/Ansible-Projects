@@ -1,6 +1,6 @@
 ---
  - name: install,update and uninstall packages
-   hosts: jeji
+   hosts: localhost
    tasks:
    - name: install httpd package
      yum: name=httpd state=present
