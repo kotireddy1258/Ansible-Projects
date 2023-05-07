@@ -1,0 +1,15 @@
+---
+  - name: mutiple packages installation
+   hosts: localhost
+   tasks:
+     - name: servic installation
+       yum: 
+       name:
+           - http
+           - ftp
+           - vsftp
+           - telnet
+           - ntp
+       state=present
+
+
