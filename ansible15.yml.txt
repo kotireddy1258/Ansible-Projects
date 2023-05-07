@@ -1,0 +1,9 @@
+---
+ - name: with loop
+   hosts: jeji
+   tasks:
+   - service: name={{item}} state=restarted
+     loop:
+      - httpd
+      - sshd
+
