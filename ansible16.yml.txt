@@ -1,0 +1,11 @@
+---
+ - name: create file and add data in file
+   hosts: localhost
+   tasks:
+   - name: create file
+     file: dest=/tmp/koti state=touch mode=777 owner=koti group=bat22a
+
+   - name: add data in file
+     lineinfile: dest=/tmp/koti line='THIS IS MY PERSONAL DATA'
+
+
