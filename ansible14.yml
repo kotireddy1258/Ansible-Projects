@@ -1,6 +1,6 @@
 ---
  - name: with loop
-   hosts: jeji
+   hosts: localhost
    tasks:
    - service: name={{item}} state=restarted
      loop:
